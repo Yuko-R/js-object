@@ -193,14 +193,27 @@ printMaxNum(5, 5);
 // ----------------問題57----------------
 console.log('問題57');
 
+// 戻り値(返り値) return 値;の形で、実行した側に戻される値
+// 引数と逆方向に値を送る
+
+// function getSquared(num){
+// 	console.log(num * num);
+// }
+
+// getSquared(4);
+
 function getSquared(num){
-	return num * num
+	return num * num;
 }
 
 var result = getSquared(4);
 console.log(result);
 
+// 再宣言(letはできない)
+var result = 0;
 
+// 再代入
+result = 10;
 
 // ----------------問題58----------------
 console.log('問題58');
@@ -208,13 +221,14 @@ console.log('問題58');
 function createSelfIntroductionText(name){
 	var msg = `私の名前は${name}です`;
     return msg;
+    // console.log(num * num);
 }
 
-var message = createSelfIntroductionText("yuko");
+// 定数（再代入できない）（基本的に大文字で書く）
+const COMPANY = "NexSeed";
+
+var message = createSelfIntroductionText(COMPANY);
 console.log(message);
-
-// return, var ってなに？？
-
 
 
 // ----------------問題59----------------
@@ -245,3 +259,5 @@ function isSeedKun(msg){
 }
 
 isSeedKun('SeedKun');
+
+
