@@ -173,8 +173,75 @@ function printMessage(moji,num){
 printMessage('どらえもん',5);
 
 
+// -------------------宿題--------------------
+
+console.log('問題56');
+
+function printMaxNum(num1,num2){
+	if (num1 > num2) {
+        console.log(num1);
+    } else if (num1 < num2) {
+        console.log(num2);
+    } else {
+    		console.log('同じです')
+	}
+}
+
+printMaxNum(5, 5);
+
+
+// ----------------問題57----------------
+console.log('問題57');
+
+function getSquared(num){
+	return num * num
+}
+
+var result = getSquared(4);
+console.log(result);
 
 
 
+// ----------------問題58----------------
+console.log('問題58');
+
+function createSelfIntroductionText(name){
+	var msg = `私の名前は${name}です`;
+    return msg;
+}
+
+var message = createSelfIntroductionText("yuko");
+console.log(message);
+
+// return, var ってなに？？
 
 
+
+// ----------------問題59----------------
+console.log('問題59');
+
+function isEvenNumber(num){
+	if (num % 2 === 0){
+	return('true');
+    } else {
+    	return('false')
+    }
+}
+
+var result = isEvenNumber(4);
+console.log(result);
+
+
+
+// ----------------問題60----------------
+console.log('問題60');
+
+function isSeedKun(msg){
+	if ( msg === "SeedKun"){
+		console.log('true');
+	} else {
+		console.log('false');
+	}
+}
+
+isSeedKun('SeedKun');
